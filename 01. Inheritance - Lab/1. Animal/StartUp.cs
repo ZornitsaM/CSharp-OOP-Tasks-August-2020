@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Collections.Generic;
 
-
 namespace Farm
 {
     public class StartUp
@@ -16,7 +15,6 @@ namespace Farm
             Cat cat = new Cat();
             cat.Eat();
             cat.Meow();
-
         }
     }
 }

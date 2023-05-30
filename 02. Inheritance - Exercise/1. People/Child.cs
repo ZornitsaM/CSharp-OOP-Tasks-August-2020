@@ -16,7 +16,6 @@ namespace Person
             get 
             { return base.Age; 
             }
-
             set
             {
                 if (value>15)
@@ -25,8 +24,6 @@ namespace Person
                 }
                 base.Age = value;
             }
-           
-         
         }
     }
 }

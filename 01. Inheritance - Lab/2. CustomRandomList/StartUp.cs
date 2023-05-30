@@ -8,9 +8,6 @@ namespace CustomRandomList
     {
         public static void Main(string[] args)
         {
-          
-
-
         }
     }
 }

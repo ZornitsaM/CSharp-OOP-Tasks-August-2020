@@ -6,7 +6,6 @@ namespace Person
 {
     public class Person
     {
-
         private string name;
         private int age;
 
@@ -46,7 +45,5 @@ namespace Person
 
             return stringBuilder.ToString();
         }
-
-
     }
 }

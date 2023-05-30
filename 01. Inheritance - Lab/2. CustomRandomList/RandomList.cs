@@ -13,8 +13,8 @@ namespace CustomRandomList
             var elementIndex = random.Next(0, this.Count);
             var element = this[elementIndex];
             this.RemoveAt(elementIndex);
+
             return element;
         }
-
     }
 }
