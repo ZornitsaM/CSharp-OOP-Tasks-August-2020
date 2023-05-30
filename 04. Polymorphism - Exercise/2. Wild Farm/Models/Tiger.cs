@@ -5,14 +5,13 @@ using System.Text;
 
 namespace WildFarm.Models
 {
-    public class Tiger:Feline
+    public class Tiger : Feline
     {
         private double inputQuantity;
 
         private readonly List<string> procent = new List<string>
         {
             "Meat",
-
         };
 
         public Tiger(string name, double weight, string livingRegion, string breed) 
@@ -39,8 +38,6 @@ namespace WildFarm.Models
         public override string ToString()
         {
             return $"{this.GetType().Name} [{this.Name}, { this.Breed}, { this.Weight}, { this.LivingRegion}, {inputQuantity}]";
-
         }
-
     }
 }

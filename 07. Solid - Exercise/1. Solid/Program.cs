@@ -10,8 +10,6 @@ namespace Solid_EX
     {
         static void Main()
         {
-
-
         }
     }
 }

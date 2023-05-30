@@ -5,14 +5,13 @@ using System.Text;
 
 namespace WildFarm.Models
 {
-    public class Dog:Mammal
+    public class Dog : Mammal
     {
         private double inputQuantity;
 
         private readonly List<string> procent = new List<string>
         {
             "Meat",
-
         };
 
         public Dog(string name, double weight, string livingRegion)

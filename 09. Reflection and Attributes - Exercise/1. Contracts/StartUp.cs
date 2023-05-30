@@ -3,7 +3,6 @@ using CommandPattern.Core.Contracts;
 using System;
 
 namespace CommandPattern
-
 {
     public class StartUp
     {
@@ -12,7 +11,6 @@ namespace CommandPattern
             ICommandInterpreter command = new CommandInterpreter();
             IEngine engine = new Engine(command);
             engine.Run();
-
         }
     }
 }

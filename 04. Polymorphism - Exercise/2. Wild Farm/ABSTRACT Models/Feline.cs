@@ -19,6 +19,5 @@ namespace WildFarm.ABSTRACT_Models
             get { return breed; }
             set { breed = value; }
         }
-
     }
 }

@@ -10,7 +10,6 @@ namespace PO5
         private const int food = 0;
 
         public Rebel(string name, int age, string group)
-          
         {
             this.Name = name;
             this.Age = age;
@@ -18,7 +17,6 @@ namespace PO5
             this.Food = 0;
         }
 
-      
         public int Age { get; set; }
 
         public string Group
@@ -27,7 +25,7 @@ namespace PO5
             set { group = value; }
         }
 
-        public int Food { get; set ; }
+        public int Food { get; set; }
 
         public string Name { get; }
 

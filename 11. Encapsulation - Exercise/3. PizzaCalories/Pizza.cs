@@ -25,7 +25,6 @@ namespace _05.Pizza_Calories
             {
                 return this.name;
             }
-
             private set
             {
                 if (value == string.Empty || value.Length > 15)
@@ -42,7 +41,6 @@ namespace _05.Pizza_Calories
             {
                 return this.dough;
             }
-
             set
             {
                 this.dough = value;
@@ -71,7 +69,6 @@ namespace _05.Pizza_Calories
             {
                 callories += topping.Callories();
             }
-
             return callories;
         }
     }

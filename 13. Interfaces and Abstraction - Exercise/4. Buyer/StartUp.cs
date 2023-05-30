@@ -13,7 +13,6 @@ namespace PO5
           
             List<IBuyer> people = new List<IBuyer>();
 
-
             for (int i = 0; i < count; i++)
             {
                 var input = Console.ReadLine().Split();
@@ -27,9 +26,7 @@ namespace PO5
                     Citizen citizen = new Citizen(name, age, id, birthday);
                     citizen.BuyFood();
                     people.Add(citizen);
-
                 }
-
                 else if (input.Length==3)
                 {
                     string name = input[0];
@@ -40,25 +37,20 @@ namespace PO5
                     people.Add(rebel);
                 }
             }
-
-
+            
             string command = Console.ReadLine();
             int sumFood = 0;
 
             while (command!="End")
             {
-               
                 if (people.Any(x=>x.Name==command))
                 {
                     var curentRebel = people.FirstOrDefault(x => x.Name == command);
                     sumFood += curentRebel.Food;
                 }
-                
                 command = Console.ReadLine();
             }
-
             Console.WriteLine(sumFood);
-
         }
     }
 }

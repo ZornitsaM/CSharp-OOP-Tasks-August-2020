@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WildFarm.Models
 {
-    public class Meat:Food
+    public class Meat : Food
     {
     }
 }

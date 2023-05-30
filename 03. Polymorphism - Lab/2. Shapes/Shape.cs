@@ -10,7 +10,6 @@ namespace Shapes
 
         public abstract double CalculateArea();
        
-       
         public virtual string Draw()
         {
             return "Drawing ";

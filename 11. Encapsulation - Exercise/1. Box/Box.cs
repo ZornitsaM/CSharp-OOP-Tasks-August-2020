@@ -42,7 +42,6 @@ namespace PO1
                 }
 
                 this.width = value;
-
             }
         }
 
@@ -60,7 +59,6 @@ namespace PO1
             }
         }
 
-
         public double GetVolume()
         {
             return this.Length * this.Width * this.Height;
@@ -75,6 +73,5 @@ namespace PO1
         {
             return 2 * this.Length * this.Width + 2 * this.Length * this.Height + 2 * this.Width * this.Height;
         }
-
     }
 }

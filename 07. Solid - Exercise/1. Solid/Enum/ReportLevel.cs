@@ -6,7 +6,6 @@ namespace Solid_EX.Enum
 {
     public enum ReportLevel
     {
-        
         Error=3,
         Info=1,
         Fatal=5,

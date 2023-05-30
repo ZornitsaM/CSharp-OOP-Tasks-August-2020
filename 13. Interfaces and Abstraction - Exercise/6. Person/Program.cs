@@ -16,13 +16,11 @@ namespace PO8
                 IResident resident = citizen;
                 IPerson person = citizen;
 
-               
                 Console.WriteLine(person.GetName());
                 Console.WriteLine(resident.GetName());
 
                 input = Console.ReadLine();
             }
-            
         }
     }
 }

@@ -22,6 +22,5 @@ namespace Stealer
         public void DownloadAllBankAccountsInTheWorld()
         {
         }
-
     }
 }

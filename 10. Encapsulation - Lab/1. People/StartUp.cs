@@ -8,7 +8,6 @@ namespace PersonsInfo
     {
         public static void Main(string[] args)
         {
-
             var lines = int.Parse(Console.ReadLine());
             var persons = new List<Person>();
             for (int i = 0; i < lines; i++)
@@ -30,12 +29,8 @@ namespace PersonsInfo
             }
 
             Console.WriteLine(team.ToString());
-
             Console.WriteLine($"Start team has {team.FirstTeam.Count} players.");
             Console.WriteLine($"Reserve team has {team.ReserveTeam.Count} players.");
-
-
-
         }
     }
 }

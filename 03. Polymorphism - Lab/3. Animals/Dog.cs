@@ -15,6 +15,5 @@ namespace Animals
         {
             return base.ExplainSelf() + Environment.NewLine + "DJAAF";
         }
-
     }
 }

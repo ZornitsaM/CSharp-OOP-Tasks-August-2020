@@ -28,11 +28,9 @@ namespace ShoppingSpree
                 {
                     throw new ArgumentException("Name cannot be empty");
                 }
-
                 this.name = value;
             }
         }
-        
 
         public double Money
         {
@@ -47,9 +45,7 @@ namespace ShoppingSpree
                 this.money = value;
             }
         }
-
+        
         public IReadOnlyCollection<Product> BagOfProducts => this.bag.AsReadOnly();
-       
-
     }
 }

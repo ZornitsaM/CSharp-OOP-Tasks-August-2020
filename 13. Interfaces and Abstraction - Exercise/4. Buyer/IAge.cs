@@ -6,9 +6,6 @@ namespace PO5
 {
     public interface IAge
     {
-
        int Age { get; set; }
-
-
     }
 }

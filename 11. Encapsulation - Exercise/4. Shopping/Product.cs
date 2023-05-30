@@ -29,7 +29,6 @@ namespace ShoppingSpree
                 name = value;
             }
         }
-
       
         public decimal Cost
         {
@@ -40,10 +39,8 @@ namespace ShoppingSpree
                 {
                     throw new ArgumentException("Money cannot be negative");
                 }
-
                 cost = value;
             }
         }
-
     }
 }

@@ -12,7 +12,6 @@ namespace PO7.Models
             : base(id, firstName, lastName, salary)
         {
             this.privates = new List<IPrivate>();
-         
         }
 
         public IReadOnlyCollection<IPrivate> Privates => this.privates.AsReadOnly();

@@ -27,9 +27,7 @@ namespace Stealer
 
                 sb.AppendLine($"{currentField.Name} = {valueUser}");
             }
-
             return sb.ToString().TrimEnd();
-
         }
 
         public string AnalyzeAcessModifiers(string className)
@@ -45,7 +43,6 @@ namespace Stealer
             foreach (var field in fields)
             {
                 sb.AppendLine($"{field.Name} must be private!");
-               
             }
 
             foreach (var method in publicMethods.Where(x=>x.Name.StartsWith("set")))
@@ -57,10 +54,8 @@ namespace Stealer
             {
                 sb.AppendLine($"{nonMethod.Name} have to be public!");
             }
-
             return sb.ToString().TrimEnd();
         }
-
 
         public string RevealPrivateMethods(string className)
         {
@@ -79,6 +74,5 @@ namespace Stealer
 
             return sb.ToString().TrimEnd();
         }
-       
     }
 }

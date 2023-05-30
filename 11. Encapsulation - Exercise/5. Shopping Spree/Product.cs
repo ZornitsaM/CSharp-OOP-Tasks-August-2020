@@ -27,11 +27,10 @@ namespace ShoppingSpree
                 {
                     throw new ArgumentException("Name cannot be empty");
                 }
-
                 this.name = value;
             }
-
         }
+
         public double Cost
         {
             get { return cost; }
@@ -41,12 +40,8 @@ namespace ShoppingSpree
                 {
                     throw new ArgumentException("Money cannot be negative");
                 }
-
                 this.cost = value;
             }
         }
-
-
-
     }
 }

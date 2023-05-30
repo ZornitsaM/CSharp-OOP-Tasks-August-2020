@@ -8,6 +8,7 @@ namespace PO7.Interfaces
     public interface IMission
     {
         string CodeName { get; }
+
         MissionState State { get; }
 
         void CompleteMission();

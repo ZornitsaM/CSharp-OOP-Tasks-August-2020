@@ -1,5 +1,4 @@
-﻿
-using CommandPattern.Core.Contracts;
+﻿using CommandPattern.Core.Contracts;
 using System;
 using System.Linq;
 using System.Reflection;

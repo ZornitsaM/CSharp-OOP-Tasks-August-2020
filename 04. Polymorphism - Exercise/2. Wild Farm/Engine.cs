@@ -32,9 +32,7 @@ namespace WildFarm
                             Cat cat = new Cat(name, weight, livingRegion, breed);
                             Console.WriteLine(cat.MakeASound());
                             animals.Add(cat);
-
                         }
-
                         else if (splittedInput[0] == "Tiger")
                         {
                             string name = splittedInput[1];
@@ -46,7 +44,6 @@ namespace WildFarm
                             Console.WriteLine(tiger.MakeASound());
                             animals.Add(tiger);
                         }
-
                         else if (splittedInput[0] == "Owl")
                         {
                             string name = splittedInput[1];
@@ -56,9 +53,7 @@ namespace WildFarm
                             Owl owl = new Owl(name, weight, wingSize);
                             Console.WriteLine(owl.MakeASound());
                             animals.Add(owl);
-
                         }
-
                         else if (splittedInput[0] == "Hen")
                         {
                             string name = splittedInput[1];
@@ -68,9 +63,7 @@ namespace WildFarm
                             Hen hen = new Hen(name, weight, wingSize);
                             Console.WriteLine(hen.MakeASound());
                             animals.Add(hen);
-
                         }
-
                         else if (splittedInput[0] == "Mouse")
                         {
                             string name = splittedInput[1];
@@ -81,7 +74,6 @@ namespace WildFarm
                             Console.WriteLine(mouse.MakeASound());
                             animals.Add(mouse);
                         }
-
                         else if (splittedInput[0] == "Dog")
                         {
                             string name = splittedInput[1];
@@ -92,9 +84,7 @@ namespace WildFarm
                             Console.WriteLine(dog.MakeASound());
                             animals.Add(dog);
                         }
-
                     }
-
                     else
                     {
                         string nameVegatables = splittedInput[0];
@@ -102,26 +92,20 @@ namespace WildFarm
                         Animal currentAnimal = animals[animals.Count - 1];
                         currentAnimal.AddFood(nameVegatables, quantity);
                     }
-
                 }
 
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
-
                 }
-
                 coun++;
                 input = Console.ReadLine();
-
             }
-
 
             foreach (Animal item in animals)
             {
                 Console.WriteLine(item.ToString());
             }
-
         }
     }
 }

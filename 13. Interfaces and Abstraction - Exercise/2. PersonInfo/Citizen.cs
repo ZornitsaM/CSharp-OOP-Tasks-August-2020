@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PersonInfo
 {
-    public class Citizen:ILastNumberable
+    public class Citizen : ILastNumberable
     {
         private string name;
         private string id;
@@ -21,7 +21,6 @@ namespace PersonInfo
             get { return name; }
             set { name = value; }
         }
-
       
         public string Id
         {
@@ -43,7 +42,6 @@ namespace PersonInfo
             {
                 Console.WriteLine(this.Id);
             }
-
         }
     }
 }

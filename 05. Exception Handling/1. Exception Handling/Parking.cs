@@ -14,15 +14,15 @@ namespace Exception_Handling_LAB
         {
             this.cars = new List<Car>();
         }
+
         public void AddCar(Car car)
         {
             if (this.Cars.Count<50)
             {
                 this.cars.Add(car);
-
             }
-            
         }
+
         public IReadOnlyCollection<Car> Cars => this.cars;
     }
 }

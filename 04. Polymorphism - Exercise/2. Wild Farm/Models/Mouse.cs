@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WildFarm.Models
 {
-    public class Mouse:Mammal
+    public class Mouse : Mammal
     {
         private double inputQuantity;
         private readonly List<string> procent = new List<string>
@@ -26,7 +26,6 @@ namespace WildFarm.Models
 
         public override void AddFood(string nameFood, double quantity)
         {
-
             if (!procent.Contains(nameFood))
             {
                 throw new ArgumentException($"{this.GetType().Name} does not eat {nameFood}!");
@@ -34,9 +33,7 @@ namespace WildFarm.Models
 
             inputQuantity = quantity;
             this.Weight += quantity * 0.10;
-
         }
-
 
         public override string ToString()
         {

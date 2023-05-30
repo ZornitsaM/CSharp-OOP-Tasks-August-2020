@@ -24,7 +24,6 @@ namespace ShoppingSpree
                     double money = double.Parse(inputPersons[i + 1]);
                     Person person = new Person(currentName, money);
                     persons.Add(person);
-
                 }
 
                 for (int i = 0; i < inputProducts.Length; i += 2)
@@ -33,8 +32,6 @@ namespace ShoppingSpree
                     double money = double.Parse(inputProducts[i + 1]);
                     Product product = new Product(currentProduct, money);
                     products.Add(product);
-
-
                 }
 
                 string command = Console.ReadLine();
@@ -42,7 +39,6 @@ namespace ShoppingSpree
                 while (command != "END")
                 {
                     var splittedCommand = command.Split();
-
                     string namePerson = splittedCommand[0];
                     string nameProduct = splittedCommand[1];
 
@@ -57,16 +53,12 @@ namespace ShoppingSpree
                         curre
                         Console.WriteLine($"{currentPerson.Name} bought {currentProduct.Name}");
                     }
-
                     else
                     {
                         Console.WriteLine($"{currentPerson.Name} can't afford {currentProduct.Name}");
                     }
-
-
                     command = Console.ReadLine();
                 }
-
 
                 foreach (Person item in persons)
                 {
@@ -74,21 +66,17 @@ namespace ShoppingSpree
                     {
                         Console.WriteLine($"{item.Name} - Nothing bought");
                     }
-
                     else
                     {
                         Console.Write($"{item.Name} - {string.Join(", ", item.BagOfProducts.Select(x => x.Name))}");
                     }
                 }
-
             }
+
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
-
-
         }
     }
 }

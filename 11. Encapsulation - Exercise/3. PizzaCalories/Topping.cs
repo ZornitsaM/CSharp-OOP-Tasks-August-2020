@@ -24,7 +24,6 @@ namespace _05.Pizza_Calories
             {
                 return this.type;
             }
-
             set
             {
                 if (value.ToLower() != "meat" && value.ToLower() != "veggies" && value.ToLower() != "sauce" && value.ToLower() != "cheese")
@@ -41,7 +40,6 @@ namespace _05.Pizza_Calories
             {
                 return this.weight;
             }
-
             set
             {
                 if (value < 1 || value > 50)
@@ -63,7 +61,6 @@ namespace _05.Pizza_Calories
                 case "cheese": modifier *= 1.1; break;
                 case "sauce": modifier *= 0.9; break;
             }
-
             return modifier * this.Weight;
         }
     }

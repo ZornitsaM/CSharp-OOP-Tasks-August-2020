@@ -27,7 +27,5 @@ namespace PersonInfo
             get { return id; }
             set { id = value; }
         }
-
-       
     }
 }

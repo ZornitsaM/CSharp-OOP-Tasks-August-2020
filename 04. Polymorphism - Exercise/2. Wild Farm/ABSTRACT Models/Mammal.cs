@@ -6,7 +6,6 @@ namespace WildFarm.ABSTRACT_Models
 {
     public abstract class Mammal:Animal
     {
-
         private string livingRegion;
 
         protected Mammal(string name, double weight,string livingRegion) 
@@ -20,6 +19,5 @@ namespace WildFarm.ABSTRACT_Models
             get { return livingRegion; }
             set { livingRegion = value; }
         }
-
     }
 }

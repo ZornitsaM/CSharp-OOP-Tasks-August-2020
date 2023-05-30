@@ -9,6 +9,5 @@ namespace Solid_LAB
         public abstract void Run();
         public abstract void Eat();
         public abstract void Sleep();
-
     }
 }

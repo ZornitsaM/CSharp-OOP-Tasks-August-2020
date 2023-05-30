@@ -11,9 +11,11 @@ namespace _05.Pizza_Calories
         static void Main(string[] args)
         {
             string command = Console.ReadLine();
+
             while (command != "END")
             {
                 string[] tokens = command.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
+
                 if (tokens[0] == "Dough")
                 {
                     try
@@ -54,6 +56,7 @@ namespace _05.Pizza_Calories
                     command = Console.ReadLine();
                     tokens = command.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
                     Pizza pizza;
+
                     try
                     {
                         Dough dough = new Dough(tokens[1], tokens[2], int.Parse(tokens[3]));

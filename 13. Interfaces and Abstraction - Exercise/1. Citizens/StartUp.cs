@@ -14,9 +14,6 @@ namespace PersonInfo
             IBirthable birthable = new Citizen(name, age, id, birthdate);
             Console.WriteLine(identifiable.Id);
             Console.WriteLine(birthable.Birthdate);
-            
-
-
         }
     }
 }

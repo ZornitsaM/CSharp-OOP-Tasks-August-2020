@@ -22,20 +22,16 @@ namespace PO7.Models
             this.repairs.Add(repair);
         }
 
-
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.ToString())
                 .AppendLine("Repairs: ");
 
-
             foreach (IRepair item in repairs)
             {
                 sb.AppendLine(" " + item);
-
             }
-
             return sb.ToString().TrimEnd();
         }
     }

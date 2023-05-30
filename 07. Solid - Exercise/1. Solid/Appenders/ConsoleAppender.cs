@@ -21,7 +21,6 @@ namespace Solid_EX.Appenders
             if (logLevel>=this.ReportLevel)
             {
                 Console.WriteLine(this.Layout.Format, dateTime, logLevel, message);
-
             }
         }
     }

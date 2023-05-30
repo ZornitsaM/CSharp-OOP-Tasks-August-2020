@@ -6,8 +6,6 @@ namespace PO1
     {
         static void Main(string[] args)
         {
-           
-
             try
             {
                 double lenght = double.Parse(Console.ReadLine());
@@ -27,7 +25,6 @@ namespace PO1
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
         }

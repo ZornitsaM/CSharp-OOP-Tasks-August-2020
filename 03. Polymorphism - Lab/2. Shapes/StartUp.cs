@@ -6,9 +6,6 @@ namespace Shapes
     {
         static void Main(string[] args)
         {
-            
-
-
         }
     }
 }

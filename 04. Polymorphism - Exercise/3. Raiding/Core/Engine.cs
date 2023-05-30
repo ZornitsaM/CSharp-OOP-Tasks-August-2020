@@ -15,14 +15,8 @@ namespace Raiding.Engine
 
         public void Run()
         {
-
-            
-
-            
             int sumPower = 0;
-
             int counter = int.Parse(Console.ReadLine());
-
 
             while (counter > 0)
             {
@@ -34,35 +28,29 @@ namespace Raiding.Engine
                     BaseHero druid = new Druid(name);
                     heroes.Add(druid);
                     counter--;
-
                 }
-
                 else if (heroType == "Paladin")
                 {
                     BaseHero paladin = new Paladin(name);
                     heroes.Add(paladin);
                     counter--;
                 }
-
                 else if (heroType == "Rogue")
                 {
                     BaseHero rogue = new Rogue(name);
                     heroes.Add(rogue);
                     counter--;
                 }
-
                 else if (heroType == "Warrior")
                 {
                     BaseHero warrior = new Warrior(name);
                     heroes.Add(warrior);
                     counter--;
                 }
-
                 else
                 {
                     Console.WriteLine("Invalid hero!");
                 }
-
             }
 
             int bossPower = int.Parse(Console.ReadLine());
@@ -75,20 +63,16 @@ namespace Raiding.Engine
             foreach (BaseHero currentHero in heroes)
             {
                 sumPower += currentHero.Power;
-
             }
 
             if (sumPower >= bossPower)
             {
                 Console.WriteLine("Victory!");
             }
-
             else
             {
                 Console.WriteLine("Defeat...");
             }
-
-
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 
 namespace ValidationAttributes.Attributes
 {
@@ -13,8 +11,8 @@ namespace ValidationAttributes.Attributes
         {
             this.minValue = minValue;
             this.maxValue = maxValue;
-
         }
+
         public override bool IsValid(object obj)
         {
             if (obj is Int32)
@@ -26,14 +24,11 @@ namespace ValidationAttributes.Attributes
                     return false;
                 }
             }
-
             else
             {
                 throw new InvalidOperationException("Invalid!");
             }
-
             return true;
         }
-
     }
 }

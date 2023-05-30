@@ -15,9 +15,7 @@ namespace PersonsInfo
             this.name = name;
             this.firstTeam = new List<Person>();
             this.reserveTeam = new List<Person>();
-            
         }
-       
 
         public IReadOnlyCollection<Person> FirstTeam
         {
@@ -35,21 +33,16 @@ namespace PersonsInfo
             }
         }
 
-
-
         public void AddPlayer(Person person)
         {
             if (person.Age<40)
             {
                 firstTeam.Add(person);
             }
-
             else
             {
                 reserveTeam.Add(person);
             }
-            
         }
-
     }
 }

@@ -10,7 +10,6 @@ namespace AuthorProblem
         {
             var tracker = new Tracker();
             tracker.PrintMethodsByAuthor();
-           
         }
     }
 }

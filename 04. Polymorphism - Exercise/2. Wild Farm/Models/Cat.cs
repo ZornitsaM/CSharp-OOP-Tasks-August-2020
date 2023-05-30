@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WildFarm.Models
 {
-    public class Cat:Feline
+    public class Cat : Feline
     {
         private double inputQuantity;
 
@@ -36,14 +36,10 @@ namespace WildFarm.Models
             inputQuantity = quantity;
             this.Weight += quantity * 0.30;
         }
-
-       
-
+s
         public override string ToString()
         {
             return $"{this.GetType().Name} [{this.Name}, { this.Breed}, { this.Weight}, { this.LivingRegion}, {inputQuantity}]";
-
-
         }
     }
 }

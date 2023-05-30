@@ -1,7 +1,6 @@
 ﻿using System;
 using ValidationAttributes.Models;
 
-
 namespace ValidationAttributes
 {
     public class StartUp
@@ -15,10 +14,7 @@ namespace ValidationAttributes
              );
 
             bool isValidEntity = Validator.IsValid(person);
-
             Console.WriteLine(isValidEntity);
-
-
         }
     }
 }

@@ -12,6 +12,5 @@ namespace Solid_EX.Layouts
                 <level>{1}</level>
                 <message>{2}</message>
                 </log>";
-
     }
 }

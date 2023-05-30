@@ -7,7 +7,6 @@ namespace PO5
     public class Pet : IName, IBirthday
     {
         public Pet(string name, string birthday)
-          
         {
             this.Name = name;
             this.Birthday = birthday;

@@ -9,8 +9,6 @@ namespace Polymorphism_EX
         {
             Engine engine = new Engine();
             engine.Run();
-
-
         }
     }
 }

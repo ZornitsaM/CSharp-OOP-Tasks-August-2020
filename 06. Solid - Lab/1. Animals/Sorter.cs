@@ -6,22 +6,21 @@ namespace Solid_LAB
 {
     public class Sorter
     {
-        public ICollection<int> Sort(ICollection<int> collection,string algorithm)
+        public ICollection<int> Sort(ICollection<int> collection, string algorithm)
         {
-            if (algorithm.ToLower()=="selection")
+            if (algorithm.ToLower() == "selection")
             {
                 return SelectionSort(collection);
             }
-
             else if (algorithm.ToLower() == "quick")
             {
                 return QuickSort(collection);
             }
-            throw new ArgumentException();
 
+            throw new ArgumentException();
         }
 
-         ICollection<int> SelectionSort(ICollection<int> collection)
+        ICollection<int> SelectionSort(ICollection<int> collection)
         {
             Console.WriteLine("Selection rulz");
             return collection;

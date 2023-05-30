@@ -21,7 +21,6 @@ namespace Shapes
             {
                 return this.height;
             }
-
             set
             {
                 if (value<0)
@@ -31,8 +30,6 @@ namespace Shapes
 
                 this.height = value;
             }
-
-
         }
 
         public double Width
@@ -42,7 +39,6 @@ namespace Shapes
                 return this.width;
                     
             }
-
             set
             {
                 if (value < 0)
@@ -68,6 +64,5 @@ namespace Shapes
         {
             return base.Draw() + this.GetType().Name;
         }
-
     }
 }

@@ -7,6 +7,7 @@ namespace PO8.Interfaces
     public interface IResident
     {
         public string Name { get; }
+
         public string Country { get; }
 
         public string GetName();

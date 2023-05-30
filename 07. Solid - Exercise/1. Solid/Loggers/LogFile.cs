@@ -15,7 +15,6 @@ namespace Solid_EX.Loggers
             File.AppendAllText(LogFilePath, message+Environment.NewLine);
         }
 
-
         public int Size => File.ReadAllText(LogFilePath).Where(c => char.IsLetter(c)).Sum(x => x);
     }
 }

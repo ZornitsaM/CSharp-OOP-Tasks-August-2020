@@ -45,60 +45,46 @@ namespace Polymorphism_EX.Core
                         if (vehycleType == "Car")
                         {
                             DriveVehicle(car, value);
-
                         }
-
                         else if (vehycleType == "Truck")
                         {
                             DriveVehicle(truck, value);
                         }
-
                         else if (vehycleType == "Bus")
                         {
                             bus.IsEmpty = false;
                             DriveVehicle(bus, value);
                         }
-
                     }
-
                     else if (command == "Refuel")
                     {
 
                         if (vehycleType == "Car")
                         {
                             car.Refuel(value);
-
                         }
-
                         else if (vehycleType == "Truck")
                         {
                             truck.Refuel(value);
                         }
-
                         else if (vehycleType == "Bus")
                         {
                             bus.Refuel(value);
                         }
-
                     }
-
                     else if (command == "DriveEmpty")
                     {
                         bus.IsEmpty = true;
                         DriveVehicle(bus, value);
                     }
-
                 }
+
                 catch (Exception ex)
                 {
 
                     Console.WriteLine(ex.Message);
                 }
-                
             }
-
-
-
             Console.WriteLine($"Car: {car.FuelQuantity:f2}");
             Console.WriteLine($"Truck: {truck.FuelQuantity:f2}");
             Console.WriteLine($"Bus: {bus.FuelQuantity:f2}");

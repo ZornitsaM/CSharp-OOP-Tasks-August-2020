@@ -7,8 +7,9 @@ namespace PO8.Interfaces
     public interface IPerson
     {
         public string Name { get; }
-        public int Age { get; }
-        public string GetName();
 
+        public int Age { get; }
+
+        public string GetName();
     }
 }

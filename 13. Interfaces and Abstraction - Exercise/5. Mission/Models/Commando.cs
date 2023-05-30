@@ -14,9 +14,7 @@ namespace PO7.Models
             : base(id, firstName, lastName, salary, corps)
         {
             this.missions = new List<IMission>();
-
         }
-
 
         public IReadOnlyCollection<IMission> Missions => this.missions.AsReadOnly();
 
@@ -25,20 +23,16 @@ namespace PO7.Models
             this.missions.Add(mission);
         }
 
-
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.ToString())
                 .AppendLine("Missions: ");
 
-
             foreach (IMission item in missions)
             {
                 sb.AppendLine(" " + item);
-
             }
-
             return sb.ToString().TrimEnd();
         }
     }

@@ -19,7 +19,6 @@ namespace Shapes
             {
                 return this.radius;
             }
-
             set
             {
                 if (value < 0)
@@ -45,6 +44,5 @@ namespace Shapes
         {
             return base.Draw() + this.GetType().Name;
         }
-
     }
 }

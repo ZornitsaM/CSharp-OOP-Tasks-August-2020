@@ -27,6 +27,5 @@ namespace PO7.Models
         {
             return $"Code Name: {this.CodeName} State: {this.State}";
         }
-
     }
 }

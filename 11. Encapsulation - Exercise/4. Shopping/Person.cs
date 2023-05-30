@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 
 namespace ShoppingSpree
-
 {
     public class Person
     {
-
-
         private string name;
         private decimal money;
         private List<Product> bagOfProducts;
@@ -60,7 +57,6 @@ namespace ShoppingSpree
                 this.Money -= product.Cost;
                 Console.WriteLine($"{this.Name} bought {product.Name}");
             }
-
             else
             {
                 Console.WriteLine($"{this.Name} can't afford {product.Name}");
@@ -76,6 +72,5 @@ namespace ShoppingSpree
             }
             return $"{this.Name} - {string.Join(", ", this.BagOfProducts.Select(x => x.Name))}";
         }
-
     }
 }

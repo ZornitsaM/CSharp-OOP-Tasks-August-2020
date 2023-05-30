@@ -14,7 +14,6 @@ namespace PersonInfo
             {
                 isInvalid = true;
                 Console.WriteLine("Invalid number!");
-
             }
 
             if (!isInvalid && phoneNumber.Length == 10)
@@ -26,9 +25,6 @@ namespace PersonInfo
             {
                 Console.WriteLine($"Dialing... { phoneNumber}");
             }
-
-           
-
         }
     }
 }

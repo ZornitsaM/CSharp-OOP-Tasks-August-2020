@@ -19,6 +19,5 @@ namespace WildFarm.ABSTRACT_Models
             get { return wingSize; }
             set { wingSize = value; }
         }
-
     }
 }

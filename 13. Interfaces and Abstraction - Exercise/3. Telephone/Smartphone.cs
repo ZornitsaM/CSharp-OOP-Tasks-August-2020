@@ -13,14 +13,11 @@ namespace PersonInfo
             if (url.Any(x=>char.IsDigit(x)))
             {
                 Console.WriteLine("Invalid URL!");
-
             }
-
             else
             {
                 Console.WriteLine($"Browsing: {url}!");
             }
-
         }
 
         public void Call(string phoneNumber)
@@ -30,7 +27,6 @@ namespace PersonInfo
             {
                 isInvalid = true;
                 Console.WriteLine("Invalid number!");
-               
             }
 
             if (!isInvalid && phoneNumber.Length==10)
@@ -41,11 +37,7 @@ namespace PersonInfo
             else if (!isInvalid && phoneNumber.Length == 7)
             {
                 Console.WriteLine($"Dialing... { phoneNumber}");
-
             }
-
-          
-
         }
     }
 }

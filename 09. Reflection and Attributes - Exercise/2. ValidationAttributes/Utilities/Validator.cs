@@ -27,10 +27,8 @@ namespace ValidationAttributes
                     {
                         return false;
                     }
-
                 }
             }
-
             return true;
         }
     }

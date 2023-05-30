@@ -10,24 +10,22 @@ namespace Polymorphism_EX.Models
         private double fuelConsumption;
         private double tankCapacity;
 
-        protected Vehicle(double fuelQuantity, double fuelConsumption,double tankCapacity)
+        protected Vehicle(double fuelQuantity, double fuelConsumption, double tankCapacity)
         {
             this.TankCapacity = tankCapacity;
             this.FuelQuantity = fuelQuantity;
             this.FuelConsumption = fuelConsumption;
-          
         }
 
         public double FuelQuantity
         {
-            get 
-            { 
-                return fuelQuantity; 
+            get
+            {
+                return fuelQuantity;
             }
-
             protected set
             {
-                if (value>this.tankCapacity)
+                if (value > this.tankCapacity)
                 {
                     fuelQuantity = 0;
                 }
@@ -39,21 +37,17 @@ namespace Polymorphism_EX.Models
             }
         }
 
-       
-
         public virtual double FuelConsumption
         {
             get { return fuelConsumption; }
             protected set { fuelConsumption = value; }
         }
-       
 
         public double TankCapacity
         {
             get { return tankCapacity; }
             private set { tankCapacity = value; }
         }
-
 
         public virtual bool Drive(double distance)
         {
@@ -64,27 +58,21 @@ namespace Polymorphism_EX.Models
                 this.FuelQuantity -= this.FuelConsumption * distance;
                 return true;
             }
-
             return false;
-
         }
 
         public virtual double Refuel(double liters)
         {
-            if (liters<=0)
+            if (liters <= 0)
             {
                 throw new InvalidOperationException("Fuel must be a positive number");
             }
-            if (this.FuelQuantity+liters>this.TankCapacity)
+            if (this.FuelQuantity + liters > this.TankCapacity)
             {
                 throw new InvalidOperationException($"Cannot fit {liters} fuel in the tank");
-              
-            }
-            
-                return this.FuelQuantity += liters;
-            
-         
-        }
 
+            }
+            return this.FuelQuantity += liters;
+        }
     }
 }

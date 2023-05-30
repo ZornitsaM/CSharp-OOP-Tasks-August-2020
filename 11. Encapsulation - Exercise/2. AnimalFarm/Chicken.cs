@@ -34,6 +34,7 @@ namespace AnimalFarm
                 this.name = value;
             }
         }
+
         public int Age
         {
             get
@@ -75,6 +76,5 @@ namespace AnimalFarm
                     return 0.75;
             }
         }
-
     }
 }

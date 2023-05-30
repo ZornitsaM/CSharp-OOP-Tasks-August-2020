@@ -19,7 +19,6 @@ namespace PO7.Models
         public override string ToString()
         {
             return base.ToString() + Environment.NewLine + $"Corps: {this.Corps}";
-
         }
     }
 }

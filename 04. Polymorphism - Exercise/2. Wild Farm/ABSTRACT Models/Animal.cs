@@ -39,11 +39,8 @@ namespace WildFarm.ABSTRACT_Models
             return base.ToString();
         }
 
-
         public virtual void AddFood(string nameFood,double quantity)
         {
-
         }
-
     }
 }

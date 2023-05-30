@@ -9,16 +9,13 @@ namespace WildFarm.Models
     {
         private double inputQuantity;
 
-
         private readonly List<string> procent = new List<string>
         {
             "Meat",
             "Fruit",
             "Vegetable",
             "Seeds"
-
         };
-        
 
         public Hen(string name, double weight, double wingSize) 
             : base(name, weight, wingSize)
@@ -29,7 +26,6 @@ namespace WildFarm.Models
         {
             return "Cluck";
         }
-
 
         public override void AddFood(string nameFood, double quantity)
         {

@@ -8,17 +8,14 @@ namespace Solid_LAB
     {
         public override void Eat()
         {
-           
         }
 
         public override void Run()
         {
-           
         }
 
         public override void Sleep()
         {
-            
         }
     }
 }

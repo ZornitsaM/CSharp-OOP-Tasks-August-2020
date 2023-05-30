@@ -19,6 +19,7 @@ namespace Raiding.Models
             get { return name; }
             set { name = value; }
         }
+
         public int Power
         {
             get { return power; }
@@ -26,6 +27,5 @@ namespace Raiding.Models
         }
 
         public abstract string CastAbility();
-        
     }
 }

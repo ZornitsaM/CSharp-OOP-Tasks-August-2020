@@ -25,7 +25,6 @@ namespace PersonInfo
                     Citizen citizen = new Citizen(name, currendInput[1]);
                     citizens.Add(citizen);
                 }
-                
                 input = Console.ReadLine();
             }
 
@@ -36,7 +35,6 @@ namespace PersonInfo
                 Citizen currentCitizen = citizens[i];
                 currentCitizen.LastNumbers(currentCitizen.Id, number);
             }
-
         }
     }
 }

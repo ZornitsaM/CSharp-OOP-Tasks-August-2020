@@ -26,7 +26,6 @@ namespace _05.Pizza_Calories
             {
                 return this.flourType;
             }
-
             set
             {
                 if (value.ToLower() != "white" && value.ToLower() != "wholegrain")
@@ -43,7 +42,6 @@ namespace _05.Pizza_Calories
             {
                 return this.bakingTechnique;
             }
-
             set
             {
                 if (value.ToLower() != "crispy" && value.ToLower() != "chewy" && value.ToLower() != "homemade")
@@ -60,7 +58,6 @@ namespace _05.Pizza_Calories
             {
                 return this.weight;
             }
-
             set
             {
                 if (value < 1 || value > 200)
@@ -86,7 +83,6 @@ namespace _05.Pizza_Calories
                 case "chewy": modifier *= 1.1; break;
                 case "homemade": modifier *= 1.0; break;
             }
-
             return modifier * this.Weight;
         }
     }

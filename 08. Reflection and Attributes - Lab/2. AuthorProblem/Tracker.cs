@@ -7,11 +7,10 @@ namespace AuthorProblem
 {
     public class Tracker
     {
-        public void PrintMethodsByAuthor() //----->> КОЙ Е ПИСАЛ МЕТОДА
+        public void PrintMethodsByAuthor()
         {
             var type = typeof(StartUp);
             var methods = type.GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static);
-           
 
             foreach (var method in methods)
             {
@@ -20,14 +19,11 @@ namespace AuthorProblem
                 foreach (AuthorAttribute attr in attributes)
                 {
                     Console.WriteLine($"{method.Name} is written by {attr.Name}");
-                      
                 }
-
             }
         }
 
-
-        public void PrintClassesByAuthor()  //----->> КОЙ Е ПИСАЛ КЛАСА
+        public void PrintClassesByAuthor()
         {
             var type = Assembly.GetExecutingAssembly().GetTypes();
             

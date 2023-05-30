@@ -22,7 +22,6 @@ namespace AnimalFarm
             {
                 Console.WriteLine(ex.Message);
             }
-            
         }
     }
 }

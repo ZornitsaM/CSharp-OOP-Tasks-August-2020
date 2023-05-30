@@ -6,7 +6,6 @@ namespace PO5
 {
     public interface IId
     {
-
         string Id { get; set; }
     }
 }
